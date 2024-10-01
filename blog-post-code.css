@@ -1,0 +1,48 @@
+/* for blog code */
+*#dm *.dmBody div.blog-post-row *.dmNewParagraph p{
+  line-height:1.5 !important;
+}
+  
+*#dm *.dmBody div.blog-post-row *.dmNewParagraph ul{
+  line-height:1.5 !important;
+}
+  
+*#dm *.dmBody div.blog-post-row *.dmNewParagraph:has(p){
+  margin: 8px 0px !important;
+  padding: 2px 0px !important;
+}
+  
+*#dm *.dmBody div.blog-post-row *.dmNewParagraph:has(h2){
+  margin: 16px 0px 8px 0px !important;
+  padding: 2px 0px !important;
+}
+  
+*#dm *.dmBody div.blog-post-row *.dmNewParagraph:has(h3){
+  margin: 16px 0px 8px 0px !important;
+  padding: 2px 0px !important;
+}
+  
+*#dm *.dmBody div.blog-post-row *.dmNewParagraph:has(ul){
+  margin: 8px 0px !important;
+  padding: 2px 0px !important;
+}
+  
+*#dm *.dmBody div.blog-post-row *.dmNewParagraph h2{
+  font-size: 30px !important;
+}
+  
+*#dm *.dmBody div.blog-post-row *.dmNewParagraph h3{
+  font-size: 30px;
+}
+
+/* Optional code for mobile view */
+
+/* @media (max-width: 768px) {
+  *#dm *.dmBody div.blog-post-row *.dmNewParagraph h2{
+    font-size: 24px !important;
+  }
+        
+  *#dm *.dmBody div.blog-post-row *.dmNewParagraph h3{
+    font-size: 24px;
+  }
+} */
