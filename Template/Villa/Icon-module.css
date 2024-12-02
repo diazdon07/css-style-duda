@@ -1,0 +1,59 @@
+/* 
+Author: Don McLin D. Diaz
+Description: Villa Icon Module
+*/
+
+*#dm *.dmBody .villa-moduleIcon{
+    transform: translate3d(0%, 0%, 0px);
+    visibility: visible !important;
+    transition-delay: unset !important;
+    transition-duration: unset !important;
+    animation-delay: unset !important;
+    animation-duration: unset !important;
+    transition-property: none !important;
+    padding-top: 0 !important;
+    padding-left: 5px !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    margin-right: 0 !important;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 11px 0px !important;
+    border-radius: 20px 20px 20px 20px !important;
+}
+*#dm *.dmBody .villa-moduleIcon .dmRespCol{
+    display: flex !important;
+}
+*#dm *.dmBody .villa-moduleIcon .dmRespCol .dmNewParagraph h4{
+    margin-bottom: 10px !important;
+}
+ *#dm *.dmBody .villa-moduleIcon .dmRespCol .graphicWidget{
+    float: none !important;
+    top: 0px !important;
+    left: 0px !important;
+    width: 60px !important;
+    position: relative !important;
+    height: 63px !important;
+    padding-top: 0px !important;
+    padding-left: 0px !important;
+    padding-bottom: 0px !important;
+    margin-left: 0px !important;
+    max-width: 60px !important;
+    margin-right: 10px !important;
+    padding-right: 0px !important;
+    min-width: 25px !important;
+    text-align: center !important;
+    min-height: auto !important;
+}
+@media (min-width: 769px) {
+    *#dm *.dmBody .villa-moduleIcon .dmRespCol{
+    padding: 20px !important;
+    }
+}
+@media (max-width: 768px) {
+    *#dm *.dmBody .villa-moduleIcon .dmRespCol{
+    padding: 10px !important;
+    }
+}
