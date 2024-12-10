@@ -1,0 +1,42 @@
+/*Modified Module Flex for Button Location*/
+:root {
+  --button-spacing-desktop: 5px; /*Spacing Between Modules Desktop*/
+  --button-spacing-mobile: 5px; /*Spacing Between Modules Mobile*/
+  --button-columns: 3; /*Number of Columns*/
+  --button-alignment: center; /*start, center, space-between, end*/
+}
+    
+.btnFlex > .dmRespColsWrapper {
+  flex-direction: column;
+}
+    
+.btnFlex > .dmRespColsWrapper > .dmRespCol {
+  display: flex;
+  gap: var(--button-spacing-desktop);
+  width: 100%;
+}
+    
+@media (min-width: 769px) {
+  .btnFlex > .dmRespColsWrapper > .dmRespCol:nth-child(2) {
+    justify-content: var(--button-alignment);
+    flex-wrap: wrap;
+  }
+  .btnFlex > .dmRespColsWrapper > .dmRespCol:nth-child(2) > .dmRespRow{
+    width: calc(calc(calc(100% / var(--button-columns)) - var(--button-spacing-desktop)) + calc(var(--button-spacing-desktop) / var(--button-columns)));
+  }
+}
+    
+@media (max-width: 768px) {
+  .btnFlex > .dmRespColsWrapper > .dmRespCol {
+    gap: var(--button-spacing-mobile);
+    display: inline-block;
+  }
+  .btnFlex > .dmRespColsWrapper > .dmRespCol > .dmRespRow {
+    min-width: 320px;
+    Padding: 0px 20px !important;
+  }
+  .btnFlex > .dmRespColsWrapper > .dmRespCol:not(:has(>.dmRespRow:nth-child(3))) > .dmRespRow {
+     min-width: 0 !important;
+  }
+}
+    
