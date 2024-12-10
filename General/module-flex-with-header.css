@@ -1,0 +1,51 @@
+/*From Dev Darriel*/
+
+:root {
+  --module-spacing-desktop: 20px; /*Spacing Between Modules Desktop*/
+  --module-spacing-mobile: 20px; /*Spacing Between Modules Mobile*/
+  --module-columns: 3; /*Number of Columns*/
+  --module-alignment: center; /*start, center, space-between, end*/
+}
+
+.modulesFlex > .dmRespColsWrapper {
+  flex-direction: column;
+}
+  
+.modulesFlex > .dmRespColsWrapper > .dmRespCol {
+  display: flex;
+  gap: var(--module-spacing-desktop);
+  overflow-y: hidden !important;
+  width: 100%;
+}
+  
+@media (min-width: 769px) {
+  .modulesFlex > .dmRespColsWrapper > .dmRespCol:nth-child(2) {
+    justify-content: var(--module-alignment);
+    flex-wrap: wrap;
+  }
+  .modulesFlex > .dmRespColsWrapper > .dmRespCol:nth-child(2) > .dmRespRow {
+    width: calc(calc(calc(100% / var(--module-columns)) - var(--module-spacing-desktop)) + calc(var(--module-spacing-desktop) / var(--module-columns)));
+  }
+  .modulesFlex > .dmRespColsWrapper > .dmRespCol:nth-child(2) > .dmRespRow > .dmRespColsWrapper > .dmRespCol{
+    /* padding: 0 40px !important; */ 
+  }
+}
+  
+@media (max-width: 768px) {
+  .modulesFlex > .dmRespColsWrapper > .dmRespCol {
+    gap: var(--module-spacing-mobile);
+    overflow-x: hidden !important;
+  }
+  .modulesFlex > .dmRespColsWrapper > .dmRespCol:has(>.dmRespRow:nth-child(3)) {
+    overflow-x: scroll !important;
+  }
+  .modulesFlex > .dmRespColsWrapper > .dmRespCol > .dmRespRow {
+    min-width: 320px;
+  }
+  .modulesFlex > .dmRespColsWrapper > .dmRespCol:not(:has(>.dmRespRow:nth-child(3))) {
+    flex-direction: column !important;
+  }
+  .modulesFlex > .dmRespColsWrapper > .dmRespCol:not(:has(>.dmRespRow:nth-child(3))) > .dmRespRow {
+    min-width: 0 !important;
+  }
+}
