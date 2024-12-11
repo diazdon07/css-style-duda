@@ -19,6 +19,9 @@
 }
   
 @media (min-width: 769px) {
+  .modulesFlex > .dmRespColsWrapper > .dmRespCol:nth-child(1) {
+    display: inline-block;
+  }
   .modulesFlex > .dmRespColsWrapper > .dmRespCol:nth-child(2) {
     justify-content: var(--module-alignment);
     flex-wrap: wrap;
