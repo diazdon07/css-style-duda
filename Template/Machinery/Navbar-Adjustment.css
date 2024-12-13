@@ -1,0 +1,15 @@
+/*
+Description: Nav bar adjustment center and 1 row
+*/
+
+@media (max-width: 1536px){
+    html #dm .main-navigation.unifiednav[data-nav-structure='SPLIT']>.unifiednav__container {
+        display: contents !important;
+    }
+    html #dm .main-navigation.unifiednav:not([data-nav-structure='VERTICAL'])>.unifiednav__container{
+        flex-wrap: nowrap !important;
+    }
+    html *#dm *.p_hfcontainer nav.u_1382207949.main-navigation.unifiednav .unifiednav__container:not([data-depth])>.unifiednav__item-wrap>.unifiednav__item{
+        font-size: clamp(0.5rem, -0.25rem + 1.1719vw, 0.875rem) !important;
+    }
+}
