@@ -15,6 +15,10 @@
     z-index: 2;
     display: none;
 }
+.dmButtonLink .link-bar{
+    position: absolute;
+    top:25px;
+}
 .messageBar{
     font-family: Arial, Helvetica, sans-serif !important;
     font-size: 12px !important;
