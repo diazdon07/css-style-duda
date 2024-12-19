@@ -105,7 +105,7 @@ function downloadCSV(data) {
 // Collect question-answer pairs
 questions.forEach((question, index) => {
     let label = question.innerText.trim();
-    let data = answers[index]?.innerHTML.trim() || "No answer provided";
+    let data = answers[index]?.innerHTML.trim() || "";
 
     if (labelsToMatch.includes(label) || label.toLowerCase().includes("item")) {
         querryPush(label, data);
