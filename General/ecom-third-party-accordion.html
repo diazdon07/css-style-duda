@@ -1,0 +1,65 @@
+<!-- Third Party product description accordion-->
+<style>
+.accordion{
+	width:100% !important;
+	margin:0 auto !important;
+}
+.accordion-toggle{
+	display:none !important;
+}
+.accordion-header{
+	color:var(--color_1) !important;
+	padding:15px !important;
+	cursor:pointer !important;
+	text-align:left !important;
+	font-weight:bold !important;
+	border-bottom:1px solid var(--color_1) !important;
+	width:100% !important;
+	display:block !important;
+	position:relative !important;
+}
+.accordion-header::after{
+	content:'\02795' !important;
+	font-size:15px !important;
+	color:var(--color_1) !important;
+	float:right !important;
+	margin-left:5px !important;
+	transition:transform 0.3s ease !important;
+	filter:brightness(0) saturate(100%) !important; /*Plus and Minus Color Adjustment*/
+}
+.accordion-toggle:checked+.accordion-header::after{
+	content:"\2796" !important;
+}
+.accordion-content{
+	display:none !important;
+	padding:15px !important;
+	border-top:none !important;
+	margin-top:-1px !important;
+}
+.accordion-toggle:checked+.accordion-header+.accordion-content{
+	display:block !important;
+}
+</style>
+
+<!-- HTML Structure for accordion description -->
+<div class="accordion">
+  
+  <input type="checkbox" id="section1" class="accordion-toggle">
+  <label for="section1" class="accordion-header">Section 1 Title Label</label>
+  <div class="accordion-content">
+    <p>Sample Description</p>
+  </div>
+
+  <input type="checkbox" id="section2" class="accordion-toggle">
+  <label for="section2" class="accordion-header">Section 2 Title Label</label>
+  <div class="accordion-content">
+    <p>Sample Description</p>
+  </div>
+
+  <input type="checkbox" id="section3" class="accordion-toggle">
+  <label for="section3" class="accordion-header">Section 3 Title Label</label>
+  <div class="accordion-content">
+    <p>Sample Description</p>
+  </div>
+  
+</div>
