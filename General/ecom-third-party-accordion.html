@@ -1,13 +1,16 @@
 <!-- Third Party product description accordion-->
 <style>
-.accordion{
+.accordion
+{
 	width:100% !important;
 	margin:0 auto !important;
 }
-.accordion-toggle{
+.accordion-toggle
+{
 	display:none !important;
 }
-.accordion-header{
+.accordion-header
+{
 	color:var(--color_1) !important;
 	padding:15px !important;
 	cursor:pointer !important;
@@ -18,25 +21,34 @@
 	display:block !important;
 	position:relative !important;
 }
-.accordion-header::after{
+.accordion-header h4
+{
+    font-size: 16px !important;
+    color: var(--color_1) !important;
+}
+.accordion-header::after
+{
 	content:'\02795' !important;
 	font-size:15px !important;
-	color:var(--color_1) !important;
-	float:right !important;
-	margin-left:5px !important;
+	color:#777 !important;
 	transition:transform 0.3s ease !important;
-	filter:brightness(0) saturate(100%) !important; /*Plus and Minus Color Adjustment*/
+	filter:brightness(0) saturate(100%) !important;
+	position: absolute;
+    right: 0;
 }
-.accordion-toggle:checked+.accordion-header::after{
+.accordion-toggle:checked+.accordion-header::after
+{
 	content:"\2796" !important;
 }
-.accordion-content{
+.accordion-content
+{
 	display:none !important;
 	padding:15px !important;
 	border-top:none !important;
 	margin-top:-1px !important;
 }
-.accordion-toggle:checked+.accordion-header+.accordion-content{
+.accordion-toggle:checked+.accordion-header+.accordion-content
+{
 	display:block !important;
 }
 </style>
