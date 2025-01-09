@@ -28,6 +28,7 @@
   }
   .modulesFlex > .dmRespColsWrapper > .dmRespCol:nth-child(2) > .dmRespRow {
     width: calc(calc(calc(100% / var(--module-columns)) - var(--module-spacing-desktop)) + calc(var(--module-spacing-desktop) / var(--module-columns)));
+    display: inherit;
   }
   .modulesFlex > .dmRespColsWrapper > .dmRespCol:nth-child(2) > .dmRespRow > .dmRespColsWrapper > .dmRespCol{
     /* padding: 0 40px !important; */ 
@@ -44,6 +45,7 @@
   }
   .modulesFlex > .dmRespColsWrapper > .dmRespCol > .dmRespRow {
     min-width: 320px;
+    display: inherit;
   }
   .modulesFlex > .dmRespColsWrapper > .dmRespCol:not(:has(>.dmRespRow:nth-child(3))) {
     flex-direction: column !important;
