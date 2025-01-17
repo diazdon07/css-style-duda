@@ -1,0 +1,45 @@
+/* Apply in row class iconModule */
+
+@media (min-width: 769px) {
+    /*icon module under banner adjustment*/
+html *#dm .iconModule > .dmRespColsWrapper > .dmRespCol > .dmRespRow > .dmRespColsWrapper > .dmRespCol {
+    padding: 20px 10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+html *#dm .iconModule > .dmRespColsWrapper > .dmRespCol > .dmRespRow > .dmRespColsWrapper > .dmRespCol > .graphicWidget {
+    margin: 0px !important;
+}
+html *#dm .iconModule > .dmRespColsWrapper > .dmRespCol > .dmRespRow > .dmRespColsWrapper > .dmRespCol > .dmNewParagraph{
+    padding: 0px !important;
+    margin: 0px !important;
+    width: auto !important;
+}
+html *#dm .iconModule > .dmRespColsWrapper > .dmRespCol > .dmRespRow > .dmRespColsWrapper > .dmRespCol > .dmNewParagraph h4 {
+    font-size: clamp(1.25rem, 0.875rem + 0.4167vw, 1.375rem);
+}
+}
+
+@media (max-width: 768px) {
+    /*icon module under banner adjustment*/
+html *#dm .iconModule > .dmRespColsWrapper > .dmRespCol > .dmRespRow > .dmRespColsWrapper > .dmRespCol {
+    padding: 20px 10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+html *#dm .iconModule > .dmRespColsWrapper > .dmRespCol > .dmRespRow > .dmRespColsWrapper > .dmRespCol > .graphicWidget {
+    margin: 0px !important;
+}
+html *#dm .iconModule > .dmRespColsWrapper > .dmRespCol > .dmRespRow > .dmRespColsWrapper > .dmRespCol > .dmNewParagraph{
+    padding: 0px !important;
+    margin: 0px !important;
+    width: auto !important;
+}
+html *#dm .iconModule > .dmRespColsWrapper > .dmRespCol > .dmRespRow > .dmRespColsWrapper > .dmRespCol > .dmNewParagraph h4 {
+    font-size: 20px !important;
+}
+}
