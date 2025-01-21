@@ -22,12 +22,9 @@ Description: Villa Icon Module
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 11px 0px !important;
     border-radius: 20px 20px 20px 20px !important;
 }
-*#dm *.dmBody .villa-moduleIcon .dmRespColsWrapper .dmRespCol {
-    display: flex;
-    align-items: center;
-}
 *#dm *.dmBody .villa-moduleIcon .dmRespCol{
     display: flex !important;
+    align-items: center !important;
 }
 *#dm *.dmBody .villa-moduleIcon .dmRespCol .dmNewParagraph h4{
     margin-bottom: 10px !important;
