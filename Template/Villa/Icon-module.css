@@ -47,7 +47,7 @@ Description: Villa Icon Module
     text-align: center !important;
     min-height: auto !important;
 }
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
     *#dm *.dmBody .villa-moduleIcon .dmRespCol{
     padding: 20px !important;
     }
@@ -56,4 +56,4 @@ Description: Villa Icon Module
     *#dm *.dmBody .villa-moduleIcon .dmRespCol{
     padding: 10px !important;
     }
-}
+} */
