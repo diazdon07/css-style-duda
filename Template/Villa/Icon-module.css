@@ -34,10 +34,10 @@ Description: Villa Icon Module
     margin: 0px !important;
     padding: 0px !important;
 }
-*#dm *.dmBody .villa-moduleIcon .dmRespCol .dmNewParagraph h4{
-    margin-bottom: 10px !important;
+*#dm *.dmBody .villa-moduleIcon .dmRespCol .dmNewParagraph p{
+    margin-top: 10px !important;
 }
- *#dm *.dmBody .villa-moduleIcon .dmRespCol .graphicWidget{
+*#dm *.dmBody .villa-moduleIcon .dmRespCol .graphicWidget{
     float: none !important;
     top: 0px !important;
     left: 0px !important;
