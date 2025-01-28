@@ -29,7 +29,7 @@
 @media (max-width: 768px) {
   .btnFlex > .dmRespColsWrapper > .dmRespCol {
     gap: var(--button-spacing-mobile);
-    display: inline-block;
+    display: grid;
   }
   .btnFlex > .dmRespColsWrapper > .dmRespCol > .dmRespRow {
     min-width: 320px;
