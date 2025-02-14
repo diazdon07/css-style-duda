@@ -1,0 +1,46 @@
+document.addEventListener("DOMContentLoaded", function () {
+    let navmenu = document.querySelectorAll("a.unifiednav__item");
+
+    let dropdown = [{ 
+        menu: "dropdown", 
+        id: "1867198927"
+    }];
+
+    let targetElement = document.getElementById(dropdown[0].id);
+
+    if (targetElement) {
+        targetElement.style.display = "none";
+        targetElement.style.position = "fixed";
+    }
+
+    let hideTimeout;
+
+    navmenu.forEach((nav) => {
+        let span = nav.querySelector("span[data-link-text]");
+
+        if (span && span.dataset.linkText === dropdown[0].menu) {
+            if (targetElement) {
+                nav.addEventListener("mouseenter", function () {
+                    clearTimeout(hideTimeout); // Cancel any pending hide event
+                    targetElement.style.display = "block";
+                });
+
+                nav.addEventListener("mouseleave", function () {
+                    hideTimeout = setTimeout(() => {
+                        targetElement.style.display = "none";
+                    }, 200); // .02 seconds delay
+                });
+
+                targetElement.addEventListener("mouseenter", function () {
+                    clearTimeout(hideTimeout); // Prevent hiding when hovering over the dropdown itself
+                });
+
+                targetElement.addEventListener("mouseleave", function () {
+                    hideTimeout = setTimeout(() => {
+                        targetElement.style.display = "none";
+                    }, 200);
+                });
+            }
+        }
+    });
+});
