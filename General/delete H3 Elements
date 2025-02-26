@@ -1,0 +1,17 @@
+<script>
+  function deleteElements() {
+    $('.caption-title, .captionContainer, .dmwidget-title') // Explicitly exclude .dmform-title
+      .not('.addH3 .caption-title, .addH3 .captionContainer')
+      .each(function () {
+        if (!$(this).hasClass('dmform-title')) { // Extra safeguard
+          $(this).remove();
+        }
+      });
+ 
+    console.log('Elements deleted');
+  }
+ 
+  dmAPI.runOnReady('.caption-title, .captionContainer, .dmform-title, .dmwidget-title', function () {
+    deleteElements();
+  });
+</script>
