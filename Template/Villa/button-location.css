@@ -17,11 +17,11 @@
 }
     
 @media (min-width: 769px) {
-  .btnFlex > .dmRespColsWrapper > .dmRespCol:nth-child(2) {
+  .btnFlex > .dmRespColsWrapper > .dmRespCol {
     justify-content: var(--button-alignment);
     flex-wrap: wrap;
   }
-  .btnFlex > .dmRespColsWrapper > .dmRespCol:nth-child(2) > .dmRespRow{
+  .btnFlex > .dmRespColsWrapper > .dmRespCol > .dmRespRow{
     width: calc(calc(calc(100% / var(--button-columns)) - var(--button-spacing-desktop)) + calc(var(--button-spacing-desktop) / var(--button-columns)));
   }
 }
@@ -39,4 +39,3 @@
      min-width: 0 !important;
   }
 }
-    
