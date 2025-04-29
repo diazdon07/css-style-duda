@@ -1,0 +1,10 @@
+html .dmRoot.dmRoot.dmRoot #dm .main-navigation.unifiednav:not([data-nav-structure=SPLIT]) .unifiednav__container[data-depth='1']{
+    overflow-y: unset;
+}
+html *#dm .dmInner nav.u_1699868851.main-navigation.unifiednav:not([data-nav-structure="VERTICAL"]) .unifiednav__container[data-depth]{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    position: absolute;
+    left: 100%;
+}
